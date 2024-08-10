@@ -70,10 +70,8 @@ THIRD_APPS = [
 
 # criamos o PROJECT_APPS para os apps que irei construir para o projeto
 PROJECT_APPS = [
-    
     'apps.base',
-    #'apps.myapp',
-    
+    'apps.pages', 
 ]
 
 # Soma dos apps instalados
@@ -105,6 +103,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # Apps
+                'base.context_processors.context_social',
             ],
         },
     },
